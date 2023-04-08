@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E657F9C-FEF7-4E4B-BAD3-40931A560E86}</ProjectGuid>
+    <ProjectGuid>{6A07A82C-C57C-40FC-8926-12E2B1D1C19C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>interfaces</RootNamespace>
-    <AssemblyName>interfaces</AssemblyName>
+    <RootNamespace>VirtualMethods</RootNamespace>
+    <AssemblyName>VirtualMethods</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICustomerDal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E657F9C-FEF7-4E4B-BAD3-40931A560E86}</ProjectGuid>
+    <ProjectGuid>{89B22374-C0DD-459A-A868-DC5B7C2D67D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>interfaces</RootNamespace>
-    <AssemblyName>interfaces</AssemblyName>
+    <RootNamespace>AccessModifiers</RootNamespace>
+    <AssemblyName>AccessModifiers</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICustomerDal.cs" />
+    <Compile Include="CourseManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
