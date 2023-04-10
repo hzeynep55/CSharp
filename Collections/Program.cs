@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,29 @@ namespace Collections
     class Program
     {
         static void Main(string[] args)
+        {
+            //Lİst();
+            //ArrayList();
+            Dictionary<string,string> dic = new Dictionary<string,string>();
+            dic.Add("book", "kitap");
+            dic.Add("notebook", "defter");
+            dic.Add("chair", "sandalye");
+
+            Console.WriteLine(dic["notebook"]); //defter değerini verir.key ve value ye de ayrı ayrı ulaşabiliriz.
+
+            foreach(var item in dic)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(dic.ContainsKey("Glass"));
+            Console.WriteLine(dic.ContainsValue("Bilgisayar"));
+
+
+            Console.ReadLine();
+        }
+
+        private static void Lİst()
         {
             /*string[] cities = new string[2] {"Ankara","İstanbul" };
             cities = new string[3]; //arrayin boyutunu büyülttük.
@@ -61,6 +85,11 @@ namespace Collections
             //customers.Clear();//liatedeki tüm elemanları siler.
             Console.WriteLine(customers.Contains(customer1)); //customers içinde customer1(referans tutuyor) değeri var mı diye bakar
 
+
+            customers.Insert(0, customer1);//0.indekse customer 1'ekledim
+            customers.Remove(customer1); //buduğu ilk değeri siler
+            customers.RemoveAll(x => x.Name == "Ayşe");
+
             foreach (var customer in customers)
             {
                 Console.WriteLine(customer.Id + " " + customer.Name);
@@ -72,32 +101,40 @@ namespace Collections
              }*/
 
             var count = customers.Count;
-            Console.WriteLine("----------------------------");
             Console.WriteLine("Eleman sayısı: " + count);
+            Console.WriteLine("----------------------------");
 
-            Console.ReadLine();
+            var index = customers.IndexOf(customer1);
+            Console.WriteLine("Index: {0}", index);
+
+            customers.Add(customer1);
+            var index1 = customers.LastIndexOf(customer1);//aramaya sondan başlayacak
+            Console.WriteLine("Index: {0}", index1);
         }
+        public static void ArrayList()
+        {
+            ArrayList cities = new ArrayList();
+            cities.Add("Ankara");
+            cities.Add("İstanbul");
 
+            cities.Add("Samsun");
+            cities.Add(1);
+            cities.Add("Bursa");
+            //Console.WriteLine(cities[2]);
+
+            foreach (var i in cities)
+            {
+                Console.WriteLine(i);
+            }
+
+        }
 
         class Arrays
         {
 
             public void Arraylist()
             {
-                ArrayList cities = new ArrayList();
-                cities.Add("Ankara");
-                cities.Add("İstanbul");
-
-                cities.Add("Samsun");
-                cities.Add(1);
-                cities.Add("Bursa");
-                //Console.WriteLine(cities[2]);
-
-                foreach (var i in cities)
-                {
-                    Console.WriteLine(i);
-                }
-
+                
             }
 
 
